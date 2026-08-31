@@ -47,7 +47,7 @@ http://localhost:8787
 ```yaml
 services:
   audiometa-nexus:
-    image: ghcr.io/2222221029/audiobook-metadata-nexus-web:${AUDIOMETA_IMAGE_TAG:-latest}
+    image: ghcr.io/workroom2008/audiobook-metadata-nexus-web:${AUDIOMETA_IMAGE_TAG:-latest}
     pull_policy: always
     container_name: audiometa-nexus
     restart: unless-stopped
