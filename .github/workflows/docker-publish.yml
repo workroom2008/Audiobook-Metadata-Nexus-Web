@@ -1,8 +1,9 @@
 name: Build and publish Docker image
 
 on:
+  # 只在版本变化时构建：由 sync-upstream.yml 检测 APP_VERSION 变化后手动触发
+  # tag 推送本身即版本发布，仍构建
   push:
-    branches: [main]
     tags: ['v*.*.*']
   workflow_dispatch:
 
