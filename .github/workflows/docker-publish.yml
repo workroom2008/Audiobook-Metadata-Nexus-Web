@@ -1,10 +1,7 @@
 name: Build and publish Docker image
 
 on:
-  # 只在版本变化时构建：由 sync-upstream.yml 检测 APP_VERSION 变化后手动触发
-  # tag 推送本身即版本发布，仍构建
-  push:
-    tags: ['v*.*.*']
+  # 自动构建已停用（GitHub 账户额度超额）。仅保留手动触发。
   workflow_dispatch:
 
 env:
